@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChildActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:nextFocusDown="@+id/spinner1">
+        <requestFocus /> 
+     </EditText>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:contentDescription="@string/child_gender"
+        android:entries="@array/array_gender" 
+        android:nextFocusDown="@+id/datePicker1"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/datePicker1"
+        android:layout_below="@+id/datePicker1"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="66dp"
+        android:contentDescription="@string/profile_photo"
+        android:src="@drawable/ic_launcher" 
+        android:nextFocusDown="@+id/button1"/>
+
+     <DatePicker
+         android:id="@+id/datePicker1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/spinner1"
+         android:layout_marginRight="57dp"
+         android:layout_marginTop="22dp"
+         android:nextFocusDown="@+id/imageView1" />
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/spinner1"
+         android:layout_marginTop="22dp"
+         android:onClick="@string/onClickSave"
+         android:text="@string/Save" />
+   
+</RelativeLayout>

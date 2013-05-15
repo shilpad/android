@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UIBasics</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="violet">VIOLET</string>
+    <string name="indigo">INDIGO</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="yellow">YELLOW</string>
+    <string name="orange">ORANGE</string>
+    <string name="red">RED</string>
+
+    <color name="color_violet">#ee82ee</color>
+    <color name="color_indigo">#4b0082</color>
+    <color name="color_blue">#00f</color>
+    <color name="color_green">#0f0</color>
+    <color name="color_yellow">#ffff00</color>
+    <color name="color_orange">#ffa500</color>
+    <color name="color_red">#f00</color>
+    <color name="color_black">#000</color>
+    <color name="color_white">#fff</color>
+    <color name="color_lightgrey">#D3D3D3</color>
+    <color name="ExpandChildBackground">#FFAFABAB</color>
+    <color name="ExpandGroupBackground">#FF7C7C7C</color>
+
+    <string name="relative_button">Press Here!</string>
+    <string name="relative_hint">Enter some text&#8230;</string>
+    <string name="family_details">Profile</string>
+    <string name="add_treasure">Add</string>
+    <string name="search_treasure">Search</string>
+    <string name="remind_me">Remind</string>
+    <string name="onClickProfile">onClickProfile</string>
+    <string name="title_activity_family">FamilyActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="family_profile">Add\n Family\n Details</string>
+    <string name="child_profile">Add\n Child</string>
+    <string name="onClickFamily">onClickFamily</string>
+    <string name="onClickChild">onClickChild</string>
+    <string name="onClickAdd">onClickAdd</string>
+    <string name="onClickSearch">onClickSearch</string>
+    <string name="onClickRemind">onClickRemind</string>
+    <string name="onClickDate">onClickDate</string>
+    <string name="Save">Save</string>
+    <string name="onClickSave">onClickSave</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="child_name">Name</string>
+    <string name="child_gender">Gender</string>
+    <string name="child_birthdate">Birthdate</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_child">ChildActivity</string>
+    <string name="add_pic_video">Tap to add a picture or video</string>
+    <string name="add_voice">Tap to add a voice memo</string>
+    <string name="notes">Notes - Multiline textview</string>
+    <string name="caption">Caption</string>
+    <string name="search_child">Carousel effect, select the child you want to add 
+        pictures to. On second thoughts it might not look good when there are fewer 
+        items to search from. Since Gallery is deprecated, View Pager
+        or HorizontalScrollView could be used to get the 
+        Image Gallery effect. Add \'All\' when you reach this page from 
+        \'Search\'</string>
+
+    <string-array name="array_gender">
+        <item>Boy</item>
+        <item>Girl</item>
+    </string-array>
+
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_add_details">AddDetailsActivity</string>
+    <string name="title_activity_pick">PickActivity</string>
+    <string name="title_activity_search_details">SearchDetailsActivity</string>
+    <string name="title_activity_reminder_details">ReminderDetailsActivity</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_pick1">Pick1Activity</string>
+    <string name="title_activity_draw">DrawActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_display_details">DisplayDetailsActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_new_reminder_details">NewReminderDetailsActivity</string>
+    <string name="title_activity_setup_reminder">SetupReminderActivity</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1">
+
+    <TableRow            
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family_profile"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_red" />
+
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family_profile"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+      </TableRow>
+
+      <View
+        android:layout_height="1dip"
+        android:background="#BDCAD2" />
+
+      <!-- More TableRows -->
+
+      <ImageView
+          android:id="@+id/imageView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:contentDescription="@string/add_pic_video"
+          android:src="@drawable/ic_launcher" />
+
+</TableLayout>

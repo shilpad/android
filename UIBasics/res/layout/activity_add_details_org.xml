@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  >
+    
+<RelativeLayout
+    android:id="@+id/relativeAdd"
+    android:layout_width="fill_parent"
+    android:layout_height="474dp" >
+
+    
+    <LinearLayout
+       android:id="@+id/linearAdd"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical" >
+   
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrollviewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.uibasics.MyHorizontalLayout
+            android:id="@+id/mygalleryAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+	</LinearLayout>
+   
+    <RelativeLayout
+        android:id="@+id/relativeAddDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="474dp"
+        android:layout_below="@id/linearAdd" >
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mygalleryAdd"
+            android:ems="10"
+            android:hint="@string/caption" >
+
+            <requestFocus android:layout_width="wrap_content" />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editName"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="@string/notes"
+            android:inputType="textMultiLine"
+            android:lines="@integer/threewordline" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnSave"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btnSave"
+            android:textAlignment="viewStart" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTagSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinnerGender"
+            android:layout_alignParentLeft="true"
+            android:text="School" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/checkBoxTagSchool"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="@string/add_pic_video"
+            android:onClick="@string/onClickAdd"
+            android:src="@drawable/select_2"
+            android:textAlignment="center" />
+
+        <VideoView
+            android:id="@+id/videoView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/checkBoxTagSchool"
+            android:layout_alignTop="@id/imgView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:onClick="@string/onClickSave"
+            android:text="@string/save" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTagFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinnerGender"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="37dp"
+            android:text="First" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTextNotes"
+            android:clickable="true"
+            android:onClick="@string/onClickDate"
+            android:text="06/16/2010"
+            android:textColor="@color/color_lightgrey" />
+        
+    </RelativeLayout>
+</RelativeLayout>
+
+</ScrollView>

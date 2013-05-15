@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeSearch"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+       android:id="@+id/linear_image"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical" >
+   
+    <HorizontalScrollView
+        android:id="@+id/image_horizontalscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.uibasics.MyHorizontalLayout
+            android:id="@+id/mygalleryAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            />
+    </HorizontalScrollView>
+	</LinearLayout>
+	
+    <RelativeLayout
+        android:id="@+id/linear_caption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mygalleryAdd"
+        android:gravity="left|center"
+        android:orientation="vertical" >
+    
+    <CheckBox
+        android:id="@+id/checkBoxTagFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="first"
+        android:textColor="@color/color_black" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxTagSchool"
+	 />
+
+    <CheckBox
+        android:id="@+id/checkBoxTagSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spinnerGender"
+        android:text="school"
+        android:textColor="@color/color_black" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxTagSchool"
+        android:layout_alignTop="@+id/spinnerGender"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="34dp"
+        android:onClick="@string/onClickSearch"
+        android:text="Search"
+        android:textColor="@color/color_white" />
+   </RelativeLayout>
+</RelativeLayout>

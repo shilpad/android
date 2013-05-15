@@ -1,0 +1,86 @@
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/color_black"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight=".08"
+            android:background="@color/color_red"
+            android:gravity="center"
+            android:text="@string/red"
+            android:textSize="@dimen/size" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight=".10"
+            android:background="@color/color_orange"
+            android:gravity="center"
+            android:text="@string/orange"
+            android:textSize="@dimen/size" />
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".12"
+            android:background="@color/color_yellow"
+            android:gravity="center"
+            android:text="@string/yellow"
+            android:textSize="@dimen/size" />
+        
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".14"
+            android:background="@color/color_green"
+            android:gravity="center"
+            android:text="@string/green"
+            android:textSize="@dimen/size" />
+        
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".16"
+            android:background="@color/color_blue"
+            android:gravity="center"
+            android:text="@string/blue"
+            android:textSize="@dimen/size" />
+        
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".18"
+            android:background="@color/color_indigo"
+            android:gravity="center"
+            android:text="@string/indigo"
+            android:textSize="@dimen/size" />
+        
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".22"
+            android:background="@color/color_violet"
+            android:gravity="center"
+            android:text="@string/violet"
+            android:textSize="@dimen/size" />
+        
+    </LinearLayout>

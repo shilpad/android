@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newdomain.myreminder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.newdomain.myreminder.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.newdomain.myreminder.SaveBirthdateActivity"
+            android:label="@string/title_activity_save_birthdate" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.newdomain.myreminder.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.newdomain.myreminder.BirthdateDbAdapter"
+            android:label="@string/title_activity_birthdate_db_adapter" >
+        </activity>
+        <activity
+            android:name="com.newdomain.myreminder.SaveImageActivity"
+            android:label="@string/title_activity_save_image" >
+        </activity>
+    </application>
+
+</manifest>

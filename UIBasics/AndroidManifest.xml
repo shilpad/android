@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uibasics"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.uibasics.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.uibasics.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.example.uibasics.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uibasics.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.uibasics.FamilyActivity"
+            android:label="@string/title_activity_family"
+            android:parentActivityName="com.example.uibasics.ProfileActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uibasics.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.uibasics.ChildActivity"
+            android:label="@string/title_activity_child" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.AddActivity"
+            android:label="@string/title_activity_add" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.AddDetailsActivity"
+            android:label="@string/title_activity_add_details" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.PickActivity"
+            android:label="@string/title_activity_pick" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.SearchDetailsActivity"
+            android:label="@string/title_activity_search_details" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.ReminderDetailsActivity"
+            android:label="@string/title_activity_reminder_details" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.Pick1Activity"
+            android:label="@string/title_activity_pick1" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.DrawActivity"
+            android:label="@string/title_activity_draw" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.DisplayDetailsActivity"
+            android:label="@string/title_activity_display_details" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.SearchResultActivity"
+            android:label="@string/title_activity_search_result" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.NewReminderDetailsActivity"
+            android:label="@string/title_activity_new_reminder_details" >
+        </activity>
+        <activity
+            android:name="com.example.uibasics.SetupReminderActivity"
+            android:label="@string/title_activity_setup_reminder" >
+        </activity>
+    </application>
+
+</manifest>

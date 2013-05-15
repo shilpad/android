@@ -1,0 +1,71 @@
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:weightSum="2" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_green"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="@string/onClickProfile"
+                android:text="@string/family_details"
+                android:textSize="@dimen/size" />
+
+            <TextView
+                android:id="@+id/textViewAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="@string/onClickAdd"
+                android:text="@string/add_treasure"
+                android:textSize="@dimen/size" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+                        <TextView
+                            android:id="@+id/textViewSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_red"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="@string/onClickSearch"
+                            android:text="@string/search_treasure"
+                            android:textSize="@dimen/size" />
+
+            <TextView
+                android:id="@+id/textViewRemind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_orange"
+                android:clickable="true"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:onClick="@string/onClickRemind"
+                android:text="@string/remind_me"
+                android:textSize="@dimen/size" />
+
+        </TableRow>
+
+    </TableLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChildActivity" >
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editName"
+        android:layout_below="@+id/editName"
+        android:contentDescription="@string/child_gender"
+        android:entries="@array/array_gender"
+        android:nextFocusDown="@+id/datePickerReminder" />
+
+     <EditText
+         android:id="@+id/editName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:ems="10"
+         android:hint="@string/first_name"
+         android:nextFocusDown="@+id/spinnerGender" />
+
+     <DatePicker
+         android:id="@+id/datePicker1"
+      	 android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/spinnerGender"
+         android:nextFocusDown="@+id/imageView1" />
+
+     <Button
+         android:id="@+id/btnSave"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="56dp"
+         android:layout_marginRight="14dp"
+         android:onClick="@string/onClickSave"
+         android:text="@string/Save" />
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="200dp"
+         android:layout_height="200dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/datePicker1"
+         android:adjustViewBounds="true"
+         android:clickable="true"
+         android:contentDescription="@string/profile_photo"
+         android:nextFocusDown="@+id/btnSave"
+         android:onClick="@string/onClickAdd"
+         android:src="@drawable/ic_launcher" />
+   
+   
+</RelativeLayout>

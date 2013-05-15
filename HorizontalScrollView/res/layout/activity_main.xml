@@ -1,0 +1,56 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:id="@+id/relative01">
+        
+   <LinearLayout
+       android:id="@+id/linear_image"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical" >
+   
+    <HorizontalScrollView
+        android:id="@+id/image_horizontalscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.androidhorizontalscrollviewgallery.MyHorizontalLayout
+            android:id="@+id/mygallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            />
+    </HorizontalScrollView>
+	</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_caption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mygallery"
+        android:layout_marginTop="@dimen/padding_small"
+        android:gravity="left|center"
+        android:orientation="vertical" >
+    
+            <EditText
+                android:id="@+id/editTextCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter a Caption" >
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Notes"
+                android:inputType="textMultiLine"
+                android:lines="@integer/linesforNotes" />
+
+    </LinearLayout>
+
+</RelativeLayout>
