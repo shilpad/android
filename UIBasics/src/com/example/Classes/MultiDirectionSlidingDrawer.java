@@ -258,6 +258,7 @@ public class MultiDirectionSlidingDrawer extends ViewGroup {
 		final long drawingTime = getDrawingTime();
 		final View handle = mHandle;
 		final boolean isVertical = mVertical;
+		final boolean isVertical2 = mVertical;
 		
 		drawChild( canvas, handle, drawingTime );
 		
